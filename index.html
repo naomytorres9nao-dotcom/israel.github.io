@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo Hayde ❤️</title>
+    <!-- Fuente bonita de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            padding: 20px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .heart {
+            color: #ff5e7e;
+            font-size: 2em;
+            animation: heartbeat 1s infinite;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            margin-top: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Pequeños corazones flotantes */
+        .floating-heart {
+            position: absolute;
+            font-size: 1.5em;
+            animation: floatHearts 6s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes floatHearts {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-300px) rotate(180deg); }
+            100% { transform: translateY(0) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Corazones flotantes -->
+    <div class="floating-heart" style="left:10%;">❤️</div>
+    <div class="floating-heart" style="left:25%; animation-delay:1s;">💖</div>
+    <div class="floating-heart" style="left:40%; animation-delay:2s;">❤️</div>
+    <div class="floating-heart" style="left:55%; animation-delay:3s;">💖</div>
+    <div class="floating-heart" style="left:70%; animation-delay:4s;">❤️</div>
+    <div class="floating-heart" style="left:85%; animation-delay:5s;">💖</div>
+
+    <div class="container">
+        <h1>Te Amo Hayde <span class="heart">❤️</span></h1>
+        <p>Hayde, cada día que pasa me doy cuenta de lo increíble que eres. Tu sonrisa ilumina todo a mi alrededor y tu presencia hace que cada momento sea especial. Quiero que sepas que eres lo mejor que me ha pasado y siempre estaré aquí para ti, apoyándote y amándote sin medida.</p>
+        <p>Gracias por ser tan maravillosa, por tus risas, tus detalles y tu cariño. Cada instante contigo es un regalo que atesoro profundamente. Siempre serás mi inspiración, mi alegría y mi amor eterno.</p>
+        
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNjY2N3wwfDF8c2VhcmNofDF8fGZyYWNlfGVufDB8fHx8MTY5NzcyNzAwMA&ixlib=rb-4.0.3&q=80&w=400" alt="Imagen romántica">
+        </div>
+    </div>
+</body>
+</html>
